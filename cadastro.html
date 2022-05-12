@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #003265;
+        }
+        div{
+            background-color: rgba(0, 0, 0, 0.9);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-40%);
+            padding: 80px;
+            border-radius: 15px;
+            color: #fff;
+            width: 630px;
+            height: 650px;
+        }
+        input{
+            padding: 15px;
+            border-radius: 20px;
+            font-size: 40px;
+            width:590px;
+            height: 80px;
+        }
+        button{
+            background-color: dodgerblue;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            color: white;
+            font-size: 40px;
+            margin-top: 10%;
+            width: 405px;
+            height: 90px;
+            margin-left: 15%;
+
+
+        }
+        button:hover{
+            background-color: deepskyblue;
+            cursor: pointer;
+        }
+        .login{
+            font-size: 50px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .osselft{
+            height: 250px;
+            width: 300px;
+            position: absolute;
+            transform: translate(48%,-150%);
+            border-radius: 30px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <img class="osselft" src="https://i.imgur.com/YgGbmEI.png" alt="">
+    </div>
+    <div>
+        <h1 class="login" >Cadastro Ossel</h1>
+        <input type="text" placeholder="Usuario" id="login">
+        <br><br>
+        <input type="password" placeholder="Senha" id="senha">
+        <br><br>
+        <input type="text" name="email" placeholder="Email">
+        <br><br>
+        <button type="submit" onclick="logar();return false">Cadastrar</button>
+    </div>
+
+
+    <script>
+
+        function logar(){
+
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if(login == "michael_jackson" && senha == "osselassistencia"){
+                location.href = "login.html"
+    }
+}
+
+    </script>
+
+    
+
+  
+</body>
+</html> 
